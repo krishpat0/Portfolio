@@ -2,33 +2,24 @@
     padding: 0;
     margin: 0;
     font-family:'Times New Roman';
-}
-html {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
-  }
-  *, *:before, *:after {
-    -webkit-box-sizing: inherit;
-    -moz-box-sizing: inherit;
-    box-sizing: inherit;
-    }
 
-    hr{
-        margin: 100px;
-    }
+}
+
+
+   
 /* header */
 header{
     display: flex;
     justify-content: space-between;
     background-color: teal;
     align-items: center;
-    padding: 1em;
+    /* padding: 1em; */
     position: sticky;
     top: 0;
-   z-index: 100;
+    z-index: 100;
     box-shadow: 1px 1px 5px black;    
-    
+    width: 100vw;
 }
 
 .logo{
@@ -71,7 +62,8 @@ main{
     justify-content: center;
     align-items: center;
     background-color: antiquewhite;
-    
+    width: 100vw;
+
 }
 
 
@@ -112,6 +104,8 @@ p{
 footer {
    color: white;
    background-color:cadetblue;
+   width: 100vw;
+
 }
 
 footer p{

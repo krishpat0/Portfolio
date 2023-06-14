@@ -1,10 +1,22 @@
 *{
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
-    font-family: 'Sarabun', sans-serif;
+    font-family:cursive;
 }
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+    }
 
+    hr{
+        margin: 100px;
+    }
 /* header */
 header{
     display: flex;
@@ -12,11 +24,9 @@ header{
     background-color: teal;
     align-items: center;
     padding: 1em;
-    /* position: fixed;
-    left: 0;
+    position: sticky;
     top: 0;
-    right: 0;
-    z-index: 10; */
+   z-index: 100;
     box-shadow: 1px 1px 5px black;    
     
 }
@@ -25,12 +35,13 @@ header{
     height: 50px;
    width: 80px; 
    border-radius: 50px;
+   
 
 }
- nav a{
-    color: white;
- }
-
+.logo:hover{
+    transform: rotate(-15deg);
+}
+ 
 
 nav ul{
     display: flex;
@@ -43,7 +54,13 @@ nav ul{
 nav a{
     text-decoration: none;
     font-size: 1.1rem;
+    color: lightgrey;
 
+
+}
+nav a:hover{
+color: white;
+border-bottom: 4px solid darkslategray;
 }
 
 /* main content */
@@ -54,13 +71,12 @@ main{
     justify-content: center;
     align-items: center;
     background-color: antiquewhite;
+    
 }
 
 
 #content{
-    margin: 1%;
  width: 90%;
- border: 4px double gold;
  
     }
 #home{
@@ -108,14 +124,12 @@ footer p{
 .email{
     text-decoration: none;
     font-weight: bold;
-    font-style: italic;
     color: red;
 }
 
 .libutton{
     text-decoration: none;
     font-weight: bold;
-    font-style: italic;
     color: red;
 
 }
@@ -123,12 +137,19 @@ footer p{
 .gitbtn{
     text-decoration: none;
     font-weight: bold;
-    font-style: italic;
     color: red;
 }
 .companylink{
     text-decoration: none;
     font-weight: bold;
-    font-style: italic;
     color: red;
+}
+em{
+    font-weight: bold;
+}
+
+.btn{
+    
+    margin:  1% 0;
+    padding: 1%;
 }
